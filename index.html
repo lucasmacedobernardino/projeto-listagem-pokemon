@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="src/css/darkMode.css">
 </head>
 
 <body>
@@ -17,9 +18,10 @@
         <a href="#">
             <img src="./src/imagens/pokeball.png" alt="pokebola" class="logo ">
         </a>
-        <button id="botao-alterar-tema">
-                <img src="./src/imagens/moon.png" alt="imagem da lua" class="imagem-botao">
-            </button>
+            <label for="alterarTema" id="botao-alterar-tema">
+                <img src="./src/imagens/sun.png" alt="imagem do sol" id="imagem-botao">
+            </label>
+            <input type="checkbox" name="alterarTema" id="alterarTema" style="display: none;"/>
     </header>
     <main>
         <ul class="listagem-pokemon">

@@ -1,0 +1,14 @@
+:root{
+  --bg-color:rgb(200, 197, 197);
+  --text-color: rgb(59, 14, 88);
+}
+
+:root:has(#alterarTema:checked){
+  --bg-color:rgb(31, 31, 31);
+  --text-color: rgb(114, 86, 197);
+}
+
+:root .cartao-pokemon{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}

@@ -1,12 +1,7 @@
-const botao = document.getElementById("botao-alterar-tema");
-const imagemBotao = document.querySelector('.imagem-botao')
-botao.addEventListener('click', () => {  
-    if (document.body.style.background == "gray" ) {
-        document.body.style.background = "white";
-        imagemBotao.setAttribute("src", "./src/imagens/sun.png");
-        
-    } else {
-        document.body.style.background = "gray";
-        imagemBotao.setAttribute("src", "./src/imagens/moon.png");
-    }
-});
+const img = document.getElementById('imagem-botao')
+const body = document.body
+document.getElementById('alterarTema').addEventListener(('change'), (e)=>{
+    const checkbox = e.target
+    img.src = checkbox.checked == true ? "./src/imagens/moon.png": "./src/imagens/sun.png";
+    body.style.backgroundColor = checkbox.checked == true ? "rgb(36, 36, 36)" : "rgba(239, 239, 239, 0.735)"
+})
